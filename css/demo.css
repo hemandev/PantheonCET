@@ -1,0 +1,135 @@
+@import url(http://fonts.googleapis.com/css?family=Questrial|Playfair+Display:400,700);
+
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+/* Grid */
+.tilt-grid {
+	position: relative;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	list-style: none;
+	/*padding: 3em 0 0 0;*/
+	margin: 0px auto;
+	max-width: 100%;
+	background-image: url('../img/tilt.jpg') no-repeat;
+	/*max-height::; 100%;*/
+}
+.tilt-grid h2{
+	display: relative;
+	margin-top: 80px;
+}
+
+.grid__item {
+	list-style: none;
+		display: inline-block;
+	/*margin: 0 65px 100px;*/
+	margin-left: 100px;
+    height:auto;
+	width: 170px;
+	
+}
+
+.grid--xray .grid__item {
+	margin: 50px 20px 20px;
+	width: 300px;
+}
+
+.grid__item-title {
+	font-family: 'Playfair Display', Georgia, serif;
+	font-size: 1em;
+	padding: 1em 0;
+	font-weight: bold;
+}
+
+.grid__item-title code {
+	color: #aaa;
+	font-weight: normal;
+	font-size: 0.85em;
+}
+
+.grid--xray .grid__img {
+	width: 300px;
+	height: 300px;
+}
+
+.grid__img img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin-left: 100px;
+}
+
+.grid__img--border .tilt__back,
+.grid__img--border .tilt__front {
+	border: 1px solid #333;
+}
+
+.grid__img--border .tilt {
+	overflow: visible;
+} 
+
+/* Examples custom styles */
+.grid--examples {
+	/*max-width: 100%;
+	max-height: 100%;
+	margin-left: 0px;
+	margin-top: 0px;*/
+}
+
+.grid--examples .grid__img {
+	position: relative;
+	height: 0;
+	padding-bottom: 66.714%;
+	overflow: hidden;
+}
+
+.grid--examples .tilt {
+	position: absolute;
+	top: 0;
+}
+
+.grid__img--example-2::after {
+	content: '';
+	position: absolute;
+	box-shadow: inset 0 0 50px 30px rgba(2,0,37,0.8);
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.grid__img--example-3 .tilt {
+	/* -webkit-filter: grayscale(100%) brightness(105%) contrast(120%);
+	filter: grayscale(100%) brightness(105%) contrast(120%); */
+	-webkit-transition: filter 0.5s, -webkit-filter 0.5s;
+	transition: filter 0.5s, -webkit-filter 0.5s;
+}
+
+.grid__img--example-3 .tilt:hover {
+	-webkit-filter: none;
+	filter: none;
+}
+
+.grid__img--example-4 .tilt {
+	width: 120%;
+	height: 120%;
+	top: -10%;
+	left: -10%;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery-1.11.1.min.js"></script> 
+<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+	<div class="banner">		
+		<div class="banr-info">
+			<div class="logo">
+				<a>Registration</a>
+			</div>
+			<div class="bnr-text">
+				<div class="container">
+					<div class="clearfix"></div>
+					<div class="col-md-12 contact-form">
+					<form method="post" id="reg-form">
+						<div class="col-md-6 contact-grids">
+						   <input type="text" placeholder="Name" name="name" required="required">
+                                    <input type="email" placeholder="Email" name="email" required="required">
+                                    <input type="text" placeholder="Telephone" name="phone" required="required">
+						</div>
+						<div class="col-md-6 contact-grids">
+							<input type="text" placeholder="College" name="college" required="required">
+                                    <input type="text" placeholder="College ID" name="collegeid">
+                                    <select name="event">
+                                        <option selected disabled>Event</option>
+                                        <option value="Best Engineer ">Best Engineer </option>
+                                        <option value="Survey Hunt">Survey Hunt</option>
+                                        <option value="Situation mangement">Situation Mangement</option>
+                                        <option value="Paper Presentation">Paper Presentation</option>
+                                        <option value="staad">W.S staad</option>
+                                        <option value="mix design">W.S mix design</option>
+                                    </select>
+						</div>
+						  <input type="submit" value="Register" id="register" name="register">
+					</form>
+				    </div>
+				</div>
+			</div>
+		</div>	
+    </div>	
+<div id="openModal" class="modalDialog">
+    <div> <a title="Close" class="close">X</a>
+
+        <h2>Thank you</h2>
+
+        <p>YOU HAVE SUCCESSFULLY REGISTERED.</p>
+        <p>SEE YOU AT PANTHEON 2016.</p> <p>DON'T FORGET TO BRING YOUR COLLEGE ID</p>
+    </div>
+</div>
+
+
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+		</script>
+	
+    <script src="js/bootstrap.js"> </script>
+    <script src="js/grayscale.js"> </script>
+
+</body>
+</html>
